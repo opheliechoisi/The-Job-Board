@@ -1,25 +1,61 @@
-.container {
-  width: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #f1f1f1;
+* {
+  box-sizing: border-box;
 }
 header {
-  height: 50px;
-  background-color: black;
+  background-color: #333333;
+  height: 150px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-header h1 {
+h1 {
+  font-size: 50px;
+}
+
+main {
+  width: 1024px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.job {
+  height: 328px;
+  width: calc(100% / 3 - 40px / 3);
+  border-style: solid;
+  border-width: 2px;
+  border: solid red 2px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.job:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+h2 {
+  font-size: 30px;
+}
+.red {
+  border-color: red;
+}
+.yellow {
+  border-color: yellow;
+}
+.green {
+  border-color: green;
+}
+.blue {
+  border-color: blue;
+}
+.pink {
+  border-color: pink;
+}
+footer {
+  background-color: #dddddd;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-weight: bold;
-}
-.item {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 10px;
-  background-color: #333333;
 }
